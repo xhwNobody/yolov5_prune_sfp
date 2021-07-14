@@ -1,8 +1,7 @@
 整理中<br>
 
-模型权重文件：<br>
-链接：https://pan.baidu.com/s/1vHqTUWc4uG9xSH5RMHsAMQ <br>
-提取码：vdro <br>
+模型权重文件：下载地址<br>
+
 
 yolov5l:官方预训练模型 <br>
 pretrained.pt转换好的新模型 <br>
