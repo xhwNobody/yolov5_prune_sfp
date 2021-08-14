@@ -2,7 +2,7 @@
 import sys,os
 sys.path.append('../')
 from model import Model
-from small_model import Small_Model
+from small_model_mod import Small_Model
 import torch
 import numpy as np
 
