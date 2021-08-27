@@ -14,3 +14,5 @@ small_model.pt:裁剪后获得的小模型 <br>
 small_model_all.pt:裁剪后获得的小模型加了一些参数,可直接用于推理 <br>
 
 相关内容参考知乎：https://zhuanlan.zhihu.com/p/391045703
+
+各位童鞋，如果我的文章和代码对你有帮助。希望点赞和star支持一下，谢谢。
