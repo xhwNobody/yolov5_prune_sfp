@@ -1,8 +1,8 @@
 整理中<br>
 
 模型权重文件：下载地址<br> 
-链接：https://pan.baidu.com/s/1v9DLVqKQ9iGm6Z95PK8UGA <br> 
-提取码：olfx <br> 
+链接：https://pan.baidu.com/s/1EYLwrUnkeQQn_3VEosGJCQ 
+提取码：skpr 
 
 
 yolov5l:官方预训练模型 <br>
