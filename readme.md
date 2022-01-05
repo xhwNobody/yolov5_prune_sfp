@@ -1,4 +1,6 @@
-#### 安装
+# 基于SFP和FPGM的yolov5的软剪枝实现
+
+### 安装
 
 ```sh
 $ git clone https://github.com/xhwNobody/yolov5_prune_sfp.git
@@ -6,7 +8,7 @@ $ cd yolov5_prune_sfp
 $ pip3 install -r requirements.txt
 ```
 
-#### 推理
+### 推理
 
 1.下载[模型权重](https://pan.baidu.com/s/16xHcdYqagctedT2DjLBtCw)，提取码：m428
 
@@ -32,7 +34,7 @@ $ python3 detector_gpu.py
   (or python3 detector_cpu.py)
 ```
 
-#### 训练
+### 训练
 
 1.下载[VOC数据集]()
 
@@ -56,14 +58,18 @@ $ python3 weights/copy_weight.py
 $ python3 train_prune_sfp.py --data data/voc.yaml --device 1 --weights weights/pretrained.pt --hyp data/hyp.finetune.yaml
 ```
 
-#### 文章
+### 文章
 
 相关内容参考知乎：https://zhuanlan.zhihu.com/p/391045703
 
-#### 参考
+### 参考
 
 【1】yolov5官方地址：https://github.com/ultralytics/yolov5.git
 
 【2】SFP论文地址：https://arxiv.org/abs/1808.07471
 
 【3】FPGM论文地址：https://arxiv.org/pdf/1811.00250.pdf
+
+#### 致谢
+
+**亲爱的童鞋，如果我的文章和代码对你有帮助，希望点赞和star支持一下，欢迎交流！谢谢！**
