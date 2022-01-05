@@ -1,5 +1,6 @@
-整理中<br>
+### 安装
 
+### 示例
 模型权重文件：下载地址<br> 
 链接：https://pan.baidu.com/s/16xHcdYqagctedT2DjLBtCw 
 提取码：m428 
