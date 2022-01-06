@@ -54,13 +54,19 @@ $ python3 weights/copy_weight.py
 
 4.开始训练
 
-①利用sfp进行剪枝训练
+①正常训练（不剪枝）
+
+```sh
+$ python3 train.py --data data/voc.yaml --weights weights/pretrained.pt --epoch 50 --device 0 --hyp data/hyp.finetune.yaml
+```
+
+②利用sfp进行剪枝训练
 
 ```sh
 $ python3 train_prune_sfp.py --data data/voc.yaml --device 1 --weights weights/pretrained.pt --hyp data/hyp.finetune.yaml
 ```
 
-②利用fpgm进行剪枝训练
+③利用fpgm进行剪枝训练
 
 ```sh
 $ python3 train_prune_fpgm.py --data data/voc.yaml --device 1 --weights weights/pretrained.pt --hyp data/hyp.finetune.yaml
