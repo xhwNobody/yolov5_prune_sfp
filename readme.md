@@ -18,7 +18,7 @@ $ pip3 install -r requirements.txt
 $ mv weights yolov5_prune_sfp
 ```
 
-2.转换模型
+2.修剪权重和转换模型
 
 ```shell
 $ cp weights/best.pt get_small_script
@@ -54,8 +54,16 @@ $ python3 weights/copy_weight.py
 
 4.开始训练
 
+利用sfp进行剪枝训练
+
 ```sh
 $ python3 train_prune_sfp.py --data data/voc.yaml --device 1 --weights weights/pretrained.pt --hyp data/hyp.finetune.yaml
+```
+
+利用fpgm进行剪枝训练
+
+```sh
+$ python3 train_prune_fpgm.py --data data/voc.yaml --device 1 --weights weights/pretrained.pt --hyp data/hyp.finetune.yaml
 ```
 
 ### 文章
