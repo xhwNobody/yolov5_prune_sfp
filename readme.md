@@ -4,8 +4,7 @@
 
 ```sh
 $ git clone https://github.com/xhwNobody/yolov5_prune_sfp.git
-$ cd yolov5_prune_sfp
-$ pip3 install -r requirements.txt
+$ cd yolov5_prune_sfp && pip3 install -r requirements.txt
 ```
 
 ### 推理
@@ -81,6 +80,5 @@ $ python3 train_prune_fpgm.py --data data/voc.yaml --device 1 --weights weights/
 
 【3】FPGM代码地址：https://github.com/he-y/filter-pruning-geometric-median.git
 
-#### 致谢
+\*\***亲爱的童鞋，如果我的文章和代码对你有帮助，希望点赞和star支持一下，欢迎交流！谢谢！**\*\*
 
-**亲爱的童鞋，如果我的文章和代码对你有帮助，希望点赞和star支持一下，欢迎交流！谢谢！**
