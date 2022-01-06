@@ -68,6 +68,18 @@ $ python3 train_prune_sfp.py --data data/voc.yaml --device 1 --weights weights/p
 $ python3 train_prune_fpgm.py --data data/voc.yaml --device 1 --weights weights/pretrained.pt --hyp data/hyp.finetune.yaml
 ```
 
+### 实验结果
+
+利用本仓库在VOC数据集上进行的相关实验结果如下
+
+| Method                   | MAP  | FLops | Speed(ms) on  GPU<br />(forward/forward+NMS) | Speed(ms) on CPU<br />(forward/forward+NMS) |
+| ------------------------ | ---- | ----- | -------------------------------------------- | ------------------------------------------- |
+| original                 |      |       |                                              |                                             |
+| SFP(only backbone，0.7)  |      |       |                                              |                                             |
+| SFP(backbone+neck，0.7)  |      |       |                                              |                                             |
+| FPGM(only backbone，0.9) |      |       |                                              |                                             |
+| FPGM(backbone+neck，0.9) |      |       |                                              |                                             |
+
 ### 文章
 
 相关内容参考知乎：https://zhuanlan.zhihu.com/p/391045703

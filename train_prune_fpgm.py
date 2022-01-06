@@ -322,14 +322,20 @@ def train(hyp, opt, device, tb_writer=None):
         lr = [x['lr'] for x in optimizer.param_groups]  # for tensorboard
         scheduler.step()
 
+        if opt.prunebody = 1:
+            prune_indexnum = 202   #only backbone
+        elif opt.prunebody = 2:
+            prune_indexnum = 326   #both backbone and neck
+        else:
+            break
         # 通过Mask对象将model进行软剪支 
-        m.model = model                                ###########################
-        m.if_zero()                                    ###########################
-        m.init_mask(0.9, 0.1, 3, 202, True)            ########################### 202==>backbone, 314==>backbone+head
-        m.do_mask()                                    ###########################
-        m.do_similar_mask()                            ###########################
-        m.if_zero()                                    ###########################
-        model = m.model                                ###########################
+        m.model = model                                   ###########################
+        m.if_zero()                                       ###########################
+        m.init_mask(0.9, 0.1, 3, prune_indexnum, True)    ########################### 
+        m.do_mask()                                       ###########################
+        m.do_similar_mask()                               ###########################
+        m.if_zero()                                       ###########################
+        model = m.model                                   ###########################
 
 
         # DDP process 0 or single-GPU
@@ -677,6 +683,8 @@ if __name__ == '__main__':
     parser.add_argument('--local_rank', type=int, default=-1, help='DDP parameter, do not modify')
     parser.add_argument('--logdir', type=str, default='runs/', help='logging directory')
     parser.add_argument('--workers', type=int, default=8, help='maximum number of dataloader workers')
+    
+    parser.add_argument('--prunebody', type=int, default=1, help='1 means only prune backbone, 2 means prune both backbone and neck')
     opt = parser.parse_args()
 
     # Set DDP variables
