@@ -36,7 +36,7 @@ $ python3 detector_gpu.py
 
 ### 训练
 
-1.下载[VOC数据集]()
+1.下载[VOC数据集](https://pan.baidu.com/s/12ncD6qfj8WsGotmB8vlm7g)，提取码：7jnf 
 
 2.制作labels
 
@@ -66,9 +66,9 @@ $ python3 train_prune_sfp.py --data data/voc.yaml --device 1 --weights weights/p
 
 【1】yolov5官方地址：https://github.com/ultralytics/yolov5.git
 
-【2】SFP论文地址：https://arxiv.org/abs/1808.07471
+【2】SFP代码地址：https://github.com/he-y/soft-filter-pruning.git
 
-【3】FPGM论文地址：https://arxiv.org/pdf/1811.00250.pdf
+【3】FPGM代码地址：https://github.com/he-y/filter-pruning-geometric-median.git
 
 #### 致谢
 
