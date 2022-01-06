@@ -23,15 +23,13 @@ $ mv weights yolov5_prune_sfp
 ```shell
 $ cp weights/best.pt get_small_script
 $ python3 get_small_script/get_small_model.py
-$ python3 to_jit_gpu.py
-  (or python3 to_jit_gpu.py)
+$ python3 to_jit_gpu.py (or python3 to_jit_gpu.py)
 ```
 
 3.在gpu或cpu下推理
 
 ```sh
-$ python3 detector_gpu.py 
-  (or python3 detector_cpu.py)
+$ python3 detector_gpu.py (or python3 detector_cpu.py)
 ```
 
 ### 训练
@@ -41,14 +39,13 @@ $ python3 detector_gpu.py
 2.制作labels
 
 ```shell
-$ cd VOC2012
-$ python3 step1_split_data.py
-$ python3 step2_voc_label.py
+$ python3 VOC2012/step1_split_data.py
+$ python3 VOC2012/step2_voc_label.py
 ```
 
 3.转换模型
 
-```
+```shell
 $ python3 weights/copy_weight.py
 ```
 
