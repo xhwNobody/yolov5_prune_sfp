@@ -9,7 +9,8 @@ $ cd yolov5_prune_sfp && pip3 install -r requirements.txt
 
 ### 推理
 
-1.下载[模型权重](https://pan.baidu.com/s/16xHcdYqagctedT2DjLBtCw)，提取码：m428
+1.下载[模型权重](https://pan.baidu.com/s/1_4gLnNwG5RaJBggKRpXoxQ)，提取码：4b6p
+
 
 说明：yolov5l-官方预训练模型；best.pt-使用SFP剪枝训练好的模型权重。
 
